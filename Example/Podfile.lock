@@ -1,0 +1,16 @@
+PODS:
+  - SwiftFrameGadget (0.1.0)
+
+DEPENDENCIES:
+  - SwiftFrameGadget (from `../`)
+
+EXTERNAL SOURCES:
+  SwiftFrameGadget:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SwiftFrameGadget: 4dc961d2dfb76f2bc431f44f985d4eeb8e7d5175
+
+PODFILE CHECKSUM: 05ccf6abf591fd6a6dc999939712f09f076c8cbb
+
+COCOAPODS: 1.6.1
