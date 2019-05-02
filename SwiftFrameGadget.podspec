@@ -21,12 +21,14 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/linzhiyi/SwiftFrameGadget'
+  s.homepage         = 'https://github.com/LimChihi/SwiftFrameGadget'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'linzhiyi' => 'linzhiyi@bytedance.com' }
-  s.source           = { :git => 'https://github.com/linzhiyi/SwiftFrameGadget.git', :tag => s.version.to_s }
+  s.author           = { 'limchihi' => 'limchihi@foxmail.com' }
+  s.source           = { :git => 'https://github.com/LimChihi/SwiftFrameGadget.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  
+  s.swift_version = '5.0'
 
   s.ios.deployment_target = '8.0'
 
