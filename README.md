@@ -5,11 +5,46 @@
 [![License](https://img.shields.io/cocoapods/l/SwiftFrameGadget.svg?style=flat)](https://cocoapods.org/pods/SwiftFrameGadget)
 [![Platform](https://img.shields.io/cocoapods/p/SwiftFrameGadget.svg?style=flat)](https://cocoapods.org/pods/SwiftFrameGadget)
 
+SwiftFrameGadget is a very small view extension. It provides you a more elegant way to use frame layout.
+
+## Feature
+
+ `SwiftFrameGadget` provide some anchor to make the layout easier.
+
+1. `top`
+2. `bottom`
+3. `left`
+4. `right`
+5. `centerX`
+6. `centerY`
+7. `width`
+8. `height`
+
+## Usage
+
+Without `SwiftFrameGadget`, If you want to set a view next to another view, you may write code like this:
+
+```swift
+// viewA, viewB
+let x = viewA.frame.origin.x + viewA.frame.width + 5
+viewB.frame = CGRect(x: x, y: viewA.frame.origin.y, width: viewB.frame.width, viewB.frame.height)
+```
+
+With `SwiftFrameGadget`, you can write more grace code like this:
+
+```swift
+// viewA, viewB
+viewB.left = viewA.right + 5
+viewB.top = viewA.top
+```
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
+
+None
 
 ## Installation
 
@@ -22,7 +57,7 @@ pod 'SwiftFrameGadget'
 
 ## Author
 
-linzhiyi, linzhiyi@bytedance.com
+limchihi, limchihi@foxmail.com
 
 ## License
 
