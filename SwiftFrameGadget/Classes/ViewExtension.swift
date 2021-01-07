@@ -10,96 +10,100 @@ import UIKit
 
 extension UIView {
     
+    @inlinable
     public var width: CGFloat {
         get {
-            return frame.width
+            frame.size.width
         }
         set {
-            frame = CGRect(origin: frame.origin, size: CGSize(width: newValue, height: height))
+            frame.size.width = newValue
         }
     }
     
+    @inlinable
     public var height: CGFloat {
         get {
-            return frame.height
+            frame.size.height
         }
         set {
-            frame = CGRect(origin: frame.origin, size: CGSize(width: width, height: newValue))
+            frame.size.height = newValue
         }
     }
     
+    @inlinable
     public var top: CGFloat {
         get {
-            return frame.origin.y
+            frame.origin.y
         }
         set {
-            frame = CGRect(origin: CGPoint(x: left, y: newValue), size: frame.size)
+            frame.origin.y = newValue
         }
     }
     
+    @inlinable
     public var bottom: CGFloat {
         get {
-            return top + height
+            top + height
         }
-        
         set {
-            frame = CGRect(origin: CGPoint(x: left, y: newValue - height), size: frame.size)
+            frame.origin = .init(x: left, y: newValue - height)
         }
     }
     
-    
+    @inlinable
     public var left: CGFloat {
         get {
-            return frame.origin.x
+            frame.origin.x
         }
-        
         set {
-            frame = CGRect(origin: CGPoint(x: newValue, y: top), size: frame.size)
+            frame.origin.x = newValue
         }
     }
     
+    @inlinable
     public var right: CGFloat {
         get {
-            return left + width
+            left + width
         }
-        
         set {
-            frame = CGRect(origin: CGPoint(x: newValue - width, y: top), size: frame.size)
+            frame.origin = .init(x: newValue - width, y: top)
         }
     }
     
-    
+    @inlinable
     public var centerX: CGFloat {
         get {
-            return center.x
+            center.x
         }
         set {
-            center = CGPoint(x: newValue, y: centerY)
+            center.x = newValue
         }
     }
     
+    @inlinable
     public var centerY: CGFloat {
         get {
-            return center.y
+            center.y
         }
         set {
-            center = CGPoint(x: centerX, y: newValue)
+            center.y = newValue
         }
     }
     
+    @inlinable
     public var size: CGSize {
         get {
-            return frame.size
+            frame.size
         }
-        
         set {
             frame.size = newValue
         }
     }
     
+    @inlinable
     public var origin: CGPoint {
         get {
-            return frame.origin
+            frame.origin
         }
         set {
             frame.origin = newValue

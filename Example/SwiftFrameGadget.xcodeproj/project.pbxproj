@@ -28,7 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		08B45EABD308AE2E44D194FF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		08B45EABD308AE2E44D194FF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		090ED0C9737F507C80ACC4C8 /* Pods-SwiftFrameGadget_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftFrameGadget_Tests.debug.xcconfig"; path = "Target Support Files/Pods-SwiftFrameGadget_Tests/Pods-SwiftFrameGadget_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		17A373BDA357031A3FCB98B9 /* Pods-SwiftFrameGadget_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftFrameGadget_Example.debug.xcconfig"; path = "Target Support Files/Pods-SwiftFrameGadget_Example/Pods-SwiftFrameGadget_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* SwiftFrameGadget_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftFrameGadget_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,9 +42,9 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		8A30301608574ED8B98E9326 /* Pods_SwiftFrameGadget_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftFrameGadget_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AC786696B660FC124927A7F2 /* SwiftFrameGadget.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = SwiftFrameGadget.podspec; path = ../SwiftFrameGadget.podspec; sourceTree = "<group>"; };
+		AC786696B660FC124927A7F2 /* SwiftFrameGadget.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SwiftFrameGadget.podspec; path = ../SwiftFrameGadget.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B467C176004B0D59700B2CF1 /* Pods-SwiftFrameGadget_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftFrameGadget_Example.release.xcconfig"; path = "Target Support Files/Pods-SwiftFrameGadget_Example/Pods-SwiftFrameGadget_Example.release.xcconfig"; sourceTree = "<group>"; };
-		E74FA9C6E9C33BB01B88FADA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		E74FA9C6E9C33BB01B88FADA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		EB4726D0C723B0ABD84DE4F6 /* Pods-SwiftFrameGadget_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftFrameGadget_Tests.release.xcconfig"; path = "Target Support Files/Pods-SwiftFrameGadget_Tests/Pods-SwiftFrameGadget_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		FC7E214A8973FA5FB67CC8E1 /* Pods_SwiftFrameGadget_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftFrameGadget_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -156,7 +156,6 @@
 				090ED0C9737F507C80ACC4C8 /* Pods-SwiftFrameGadget_Tests.debug.xcconfig */,
 				EB4726D0C723B0ABD84DE4F6 /* Pods-SwiftFrameGadget_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -311,12 +311,13 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SwiftFrameGadget_Example/Pods-SwiftFrameGadget_Example-frameworks.sh.input.xcfilelist",
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftFrameGadget_Example/Pods-SwiftFrameGadget_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftFrameGadget/SwiftFrameGadget.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SwiftFrameGadget_Example/Pods-SwiftFrameGadget_Example-frameworks.sh.output.xcfilelist",
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftFrameGadget.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
