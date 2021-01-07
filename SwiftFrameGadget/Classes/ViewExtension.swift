@@ -46,7 +46,7 @@ extension UIView {
             top + height
         }
         set {
-            frame.origin = .init(x: left, y: newValue - height)
+            frame.origin.y = newValue - height
         }
     }
     
@@ -66,7 +66,7 @@ extension UIView {
             left + width
         }
         set {
-            frame.origin = .init(x: newValue - width, y: top)
+            frame.origin.x = newValue - width
         }
     }
     
