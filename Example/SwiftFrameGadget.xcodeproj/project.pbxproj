@@ -311,12 +311,13 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SwiftFrameGadget_Example/Pods-SwiftFrameGadget_Example-frameworks.sh.input.xcfilelist",
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftFrameGadget_Example/Pods-SwiftFrameGadget_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftFrameGadget/SwiftFrameGadget.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SwiftFrameGadget_Example/Pods-SwiftFrameGadget_Example-frameworks.sh.output.xcfilelist",
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftFrameGadget.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
